@@ -644,8 +644,10 @@
       .img-card-grid { width: 100%; margin-right: 0; grid-template-columns: repeat(2, 1fr); }
       .about-layout { grid-template-columns: 1fr; gap: 36px; }
       .about-right { grid-template-columns: 1fr; }
-      .project-row { grid-template-columns: 1fr; }
-      .proj-left { display: flex; align-items: baseline; gap: 16px; }
+      .project-row,
+      .project-row.media-wide { grid-template-columns: 1fr; gap: 24px; }
+      .proj-left { padding-top: 0; }
+      .img-card-grid { gap: 12px; }
       .edu-layout { grid-template-columns: 1fr; gap: 28px; }
       .contact-grid { grid-template-columns: 1fr 1fr; }
       footer { flex-direction: column; gap: 6px; text-align: center; }
