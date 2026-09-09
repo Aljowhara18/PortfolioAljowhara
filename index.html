@@ -374,6 +374,19 @@
       color: var(--accent);
       letter-spacing: 0.08em;
     }
+    .status-tag {
+      font-family: var(--font-sans);
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 3px 7px;
+      margin-left: 6px;
+      line-height: 1;
+    }
 
     .proj-right {}
     .proj-desc {
@@ -409,6 +422,18 @@
       display: block;
       object-fit: contain;
     }
+    /* Persona image */
+.project-row.persona .img-card img {
+  width: 120%;
+  max-width: 1000px;
+  transform: translateY(60px);
+}
+/* Budget image */
+.project-row.budget .img-card img {
+  width: 100%;
+  max-width: 1000px;
+  transform: translateY(40px);
+}
     /* Larger media column projects use fuller images */
     .project-row.media-wide .img-card img {
       width: 90%;
@@ -479,6 +504,31 @@
       width: 100%;
       display: block;
       object-fit: contain;
+    }
+
+    /* web projects — live website link panel */
+    .web-project-panel {
+      min-height: 220px;
+      width: 100%;
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .web-project-panel .about-col-label {
+      margin-bottom: 10px;
+    }
+
+    .web-project-panel .web-project-url {
+      font-size: 12px;
+      color: var(--text-3);
+      line-height: 1.6;
+      word-break: break-word;
+      margin-bottom: 20px;
     }
 
     .video-btn {
@@ -912,10 +962,44 @@
     <span class="work-year">2025 — 2026</span>
   </div>
 
-  <!-- 01 BURNEX -->
-  <div class="project-row media-wide">
+
+  <!-- 01 PERSONA -->
+  <div class="project-row persona">
     <div class="proj-left">
       <p class="proj-num">01</p>
+      <h2 class="proj-title">Persona</h2>
+      <div class="proj-tags">
+        <span class="tag">React</span>
+        <span class="tag-sep"> · </span>
+        <span class="tag">FastAPI</span>
+        <span class="tag-sep"> · </span>
+        <span class="tag">Python</span>
+        <span class="tag-sep"> · </span>
+        <span class="tag">AI</span>
+        <span class="status-tag">In Progress</span>
+      </div>
+      <p class="proj-desc">A Persona Archive platform that uses AI-powered text analysis to provide deeper analyses of fictional characters and personalize the user experience.</p>
+      <ul class="proj-bullets">
+        <li>Built an interactive archive experience for exploring fictional characters</li>
+        <li>Integrated AI-powered text analysis to generate deeper character insights</li>
+        <li>Developed the platform using React with a FastAPI and Python backend</li>
+        <li>Focused the experience on personalized, character-specific analysis</li>
+      </ul>
+      <a class="btn-dark" href="https://persona-seven-cyan.vercel.app/characters/amelie-poulain" target="_blank" rel="noopener">Visit Website ↗</a>
+    </div>
+    <div class="proj-right">
+      <div class="proj-right">
+  <div class="img-card">
+    <img src="Persona.png" alt="Persona project">
+  </div>
+</div>
+    </div>
+  </div>
+
+  <!-- 02 BURNEX -->
+  <div class="project-row media-wide">
+    <div class="proj-left">
+      <p class="proj-num">02</p>
       <h2 class="proj-title">Burnex</h2>
       <div class="proj-tags">
         <span class="tag">Full-Stack</span>
@@ -948,10 +1032,10 @@
     </div>
   </div>
 
-  <!-- 02 SANAM -->
+  <!-- 03 SANAM -->
   <div class="project-row media-wide">
     <div class="proj-left">
-      <p class="proj-num">02</p>
+      <p class="proj-num">03</p>
       <h2 class="proj-title">Sanam</h2>
       <div class="proj-tags">
         <span class="tag">iOS</span>
@@ -978,10 +1062,41 @@
     </div>
   </div>
 
-  <!-- 02 MOVIEISME -->
+
+<!-- 04 BUDGET -->
+<div class="project-row budget">
+  <div class="proj-left">
+    <p class="proj-num">04</p>
+    <h2 class="proj-title">Budget</h2>
+    <div class="proj-tags">
+      <span class="tag">Web</span>
+      <span class="tag-sep"> · </span>
+      <span class="tag">Google Gemini AI</span>
+    </div>
+
+    <p class="proj-desc">A smart budget assistant platform that analyzes and categorizes expenses and provides intelligent insights and recommendations using Google Gemini AI.</p>
+
+    <ul class="proj-bullets">
+      <li>Built a web-based budget assistant for organizing and understanding expenses</li>
+      <li>Implemented expense analysis and automatic categorization</li>
+      <li>Integrated Google Gemini AI to generate intelligent financial insights</li>
+      <li>Designed the experience to turn spending data into practical recommendations</li>
+    </ul>
+
+    <a class="btn-dark" href="https://smart-budget-assistant-sandy.vercel.app" target="_blank" rel="noopener">Visit Website ↗</a>
+  </div>
+
+  <div class="proj-right">
+    <div class="img-card">
+      <img src="Budget.png" alt="Budget project">
+    </div>
+  </div>
+</div>
+
+  <!-- 05 MOVIEISME -->
   <div class="project-row media-wide">
     <div class="proj-left">
-      <p class="proj-num">03</p>
+      <p class="proj-num">05</p>
       <h2 class="proj-title">Movieisme</h2>
       <div class="proj-tags">
         <span class="tag">iOS</span>
@@ -1007,10 +1122,10 @@
     </div>
   </div>
 
-  <!-- 03 LEARNING JOURNEY -->
+  <!-- 06 LEARNING JOURNEY -->
   <div class="project-row">
     <div class="proj-left">
-      <p class="proj-num">04</p>
+      <p class="proj-num">06</p>
       <h2 class="proj-title">Learning Journey</h2>
       <div class="proj-tags">
         <span class="tag">Full-Stack</span>
@@ -1035,10 +1150,10 @@
     </div>
   </div>
 
-  <!-- 04 MYSTORY -->
+  <!-- 07 MYSTORY -->
   <div class="project-row">
     <div class="proj-left">
-      <p class="proj-num">05</p>
+      <p class="proj-num">07</p>
       <h2 class="proj-title">MyStory</h2>
       <div class="proj-tags">
         <span class="tag">iOS</span>
@@ -1062,10 +1177,10 @@
     </div>
   </div>
 
-  <!-- 05 TANQQL -->
+  <!-- 08 TANQQL -->
   <div class="project-row media-wide tanqql">
     <div class="proj-left">
-      <p class="proj-num">06</p>
+      <p class="proj-num">08</p>
       <h2 class="proj-title">Tanqql</h2>
       <div class="proj-tags">
         <span class="tag">iOS</span>
